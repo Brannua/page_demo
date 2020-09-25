@@ -1,0 +1,237 @@
+/* 公共样式开始 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px "HanHei SC","PingFang SC","Avenir Next",Avenir,"Helvetica Neue",Helvetica,"Lantinghei SC","Hiragino Sans GB","Microsoft YaHei",微软雅黑,STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+
+a {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 让块级元素水平居中 */
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 公共样式结束 */
+
+/* 顶部导航栏样式开始 */
+.top-bar {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #333;
+}
+
+.top-bar .list {
+    float: left;
+}
+
+.top-bar .info {
+    float: right;
+}
+
+.top-bar span {
+    margin: 0 3px;
+}
+
+.top-bar a:hover {
+    color: #ddd;
+}
+/* 顶部导航栏样式结束 */
+
+/* 顶部菜单样式开始 */
+.header {
+    height: 100px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.header .logo {
+    display: inline-block;
+    width: 240px;
+    height: 55px;
+    margin: 23px 0 22px;
+    background-image: url(./img/logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header .header-list {
+    float: right;
+    line-height: 44px;
+    margin: 28px 0 27px;
+    margin-right: -24px;
+}
+
+.header .header-list > li {
+    float: left;
+    font-size: 18px;
+    padding: 0 23px 20px;
+}
+
+.header .header-list > li > a {
+    color: #212121;
+}
+
+.header .header-list > li > a:hover {
+    color: #f84330;
+}
+
+.money {
+    position: relative;
+}
+
+.money:hover .popup {
+    display: block;
+    background-color: #fff;
+}
+
+.header .popup {
+    display: none;
+    position: absolute;
+    width: 150px;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    box-sizing: border-box;
+    left: -32px;
+    top: 52px;
+}
+
+.header .popup::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #E5E5E5;
+    transform: rotate(45deg);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background-color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 70px;
+}
+
+.header .popup .item {
+    display: block;
+    color: #434343;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.header .popup a:hover {
+    color: #f84330;
+    background-color: #F3F3F3;
+}
+/* 顶部菜单样式结束 */
+
+/* banner 开始 */
+.banner {
+    height: 640px;
+    background: url(./img/banner.jpg) center 0;
+    text-align: center;
+}
+
+.banner .title {
+    font-weight: 300;
+    font-size: 50px;
+    color: #FFFFFF;
+    padding-top: 193px;
+}
+
+.banner a {
+    display: inline-block;
+    width: 261px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+    margin: 18px 0;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+.banner a:hover {
+    background-color: rgba(0, 0, 0, .8);
+    text-shadow: -0.2px -0.2px 0.1px #ffffff;
+}
+/* banner 结束 */
+
+/* 内容区域开始 */
+.content {
+    height: 410px;
+    width: 1200px;
+    border: 1px solid #E6E6E6;
+    margin-top: -80px;
+    margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, .6);
+    padding: 30px;
+}
+
+.content .item {
+    display: inline-block;
+    width: 360px;
+    height: 420px;
+    margin-left: 26px;
+}
+
+.content .content-title {
+    height: 180px;
+    background: url(./img/color1.png);
+    padding: 30px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 33px;
+}
+
+.content .content-title.sec {
+    background: url(./img/color2.png);
+}
+
+.content .content-title.thi {
+    background: url(./img/color3.png);
+}
+
+.content .content-title .title-item {
+    padding-top: 8px;
+}
+
+.content .content-info {
+    height: 240px;
+    padding: 30px 30px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.content .content-info .content-info-list > li {
+    margin-top: 10px;
+}
+
+.content .content-info .content-info-list > li > span:first-child,
+.content-info-more {
+    color: #EA5600;
+}
+
+.content-info-more {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #ECECEC;
+}
+/* 内容区域结束 */
